@@ -15,8 +15,8 @@ const generateUrl = link => {
     return '';
   }
    return `
-    ## Page URL
-    ${link} 
+  ## Page URL
+  ${link} 
    `;
 };
 
@@ -25,8 +25,8 @@ const generateInstal = instructions => {
     return '';
   }
    return `
-    ## Installation Instructions
-    ${instructions} 
+  ## Installation Instructions
+  ${instructions} 
    `;
 };
 
@@ -35,8 +35,8 @@ const generateUsage = use => {
     return '';
   }
    return `
-    ## Usage Examples/ Other Instructions
-    ${use} 
+  ## Usage Examples/ Other Instructions
+  ${use} 
    `;
 };
 
