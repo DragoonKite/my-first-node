@@ -94,7 +94,7 @@ init().then(
     answers => {return generateMarkdown(answers)})
     .then(
         //send the returned markdown page to the write file function
-        data => {writeToFile('./utils/README.md', data)})
+        data => {writeToFile('./README.md', data)})
     .then(successfulResponse => {
         // this will run when we use `resolve()` - for testing
         console.log(successfulResponse);
