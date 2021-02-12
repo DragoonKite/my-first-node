@@ -1,12 +1,12 @@
 
-  # T
+  # t
 
   ## Description
   t
 
   ## Languages
-  JavaScript
-HTML
-CSS
+  *JavaScript
+ *HTML
+ *CSS
 
 

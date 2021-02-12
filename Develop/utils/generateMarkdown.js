@@ -20,7 +20,7 @@ function generateMarkdown(data) {
   ${data.desc}
 
   ## Languages
-  ${data.languages.join('\n')}
+  *${data.languages.join('\n *')}
 
 
 `;
