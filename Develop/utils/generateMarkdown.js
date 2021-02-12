@@ -10,6 +10,36 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
+const generateUrl = link => {
+  if(!link){
+    return '';
+  }
+   return `
+    ## Page URL
+    ${link} 
+   `;
+};
+
+const generateInstal = instructions => {
+  if(!instructions){
+    return '';
+  }
+   return `
+    ## Installation Instructions
+    ${instructions} 
+   `;
+};
+
+const generateUsage = use => {
+  if(!use){
+    return '';
+  }
+   return `
+    ## Usage Examples/ Other Instructions
+    ${use} 
+   `;
+};
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   console.log(data)
@@ -22,7 +52,11 @@ function generateMarkdown(data) {
   ## Languages
   * ${data.languages.join('\n * ')}
 
+  ${generateUrl(data.link)}
 
+  ${generateInstal(data.instal)}
+
+  ${generateUsage(data.usage)}
 `;
 }
 
