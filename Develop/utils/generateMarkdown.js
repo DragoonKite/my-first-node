@@ -1,4 +1,4 @@
-let toc =["* [Description](#description)", "* [Languages](#languages)", "* [License](#license)"]
+//let toc =["* [Description](#description)", "* [Languages](#languages)", "* [License](#license)"]
 
 
 // TODO: Create a function that returns a license badge based on which license is passed in
@@ -114,7 +114,15 @@ function generateMarkdown(data) {
   # ${data.title}
 
   ## Table of Contents
-  ${toc.join('\n ')}
+  * [Description](#description)
+  * [Languages](#languages)
+  * [License](#license)
+  * [Page URL](#page url)
+  * [Installation(#installation instructions)
+  * [Usage](#usage examples/ other instructions)
+  * [Contributing](#contributing)
+  * [Testing](#test instructions)
+  * [Questions](#questions?)
 
   ## Description
   ${data.desc}
@@ -135,7 +143,8 @@ function generateMarkdown(data) {
   ${generateTest(data.test)}
 
   ${generateQuestions(data.git, data.email)}
-`;
+
+  `;
 }
 
 module.exports = generateMarkdown;

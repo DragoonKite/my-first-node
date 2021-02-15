@@ -76,7 +76,7 @@ const questions = [
     {
         type: 'input',
         name: 'usage',
-        message: 'Please enter instructions for using your project and/or examples of usage (Optional)'
+        message: 'Please enter instructions for using your project and/or examples of usage. (Optional)'
     },
     {
         type: 'input',
@@ -101,6 +101,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
+    console.log(data)
     return new Promise((resolve,reject) => {
         console.log(fileName,data)
         fs.writeFile(fileName, data, err => {
