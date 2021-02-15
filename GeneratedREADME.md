@@ -26,33 +26,26 @@
 
   
   ## Page URL
-  t 
-   
+  N/A
 
   
   ## Installation Instructions
-  t 
-   
+  N/A
 
   
   ## Usage Examples/ Other Instructions
-  t 
-   
+  N/A
 
   
   ## Contributing
-  t
-   
+  N/A
 
   
   ## Test Instructions
-  t
-   
+  N/A
 
   
   ## Questions?
-  github.com/t
-  t 
-   
+  N/A
 
   

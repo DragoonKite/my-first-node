@@ -49,7 +49,9 @@ function renderLicenseSection(license) {
 
 const generateUrl = link => {
   if(!link){
-    return '';
+    return `
+  ## Page URL
+  N/A`;
   }
    return `
   ## Page URL
@@ -59,7 +61,9 @@ const generateUrl = link => {
 
 const generateInstal = instructions => {
   if(!instructions){
-    return '';
+    return `
+  ## Installation Instructions
+  N/A`;
   }
    return `
   ## Installation Instructions
@@ -69,7 +73,9 @@ const generateInstal = instructions => {
 
 const generateUsage = use => {
   if(!use){
-    return '';
+    return `
+  ## Usage Examples/ Other Instructions
+  N/A`;
   }
    return `
   ## Usage Examples/ Other Instructions
@@ -79,7 +85,9 @@ const generateUsage = use => {
 
 const generateQuestions = (git,email) => {
   if(!git && !email){
-    return '';
+    return `
+  ## Questions?
+  N/A`;
   }
    return `
   ## Questions?
@@ -90,7 +98,9 @@ const generateQuestions = (git,email) => {
 
 const generateContribute = (contri) => {
   if(!contri){
-    return '';
+    return `
+  ## Contributing
+  N/A`;
   }
    return `
   ## Contributing
@@ -100,7 +110,9 @@ const generateContribute = (contri) => {
 
 const generateTest = (test) => {
   if(!test){
-    return '';
+    return `
+  ## Test Instructions
+  N/A`;
   }
    return `
   ## Test Instructions
