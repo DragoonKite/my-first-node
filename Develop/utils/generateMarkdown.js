@@ -35,9 +35,9 @@ function renderLicenseSection(license) {
     link = renderLicenseLink(license)
 
     return`
-    ## License
-    ${badge}
-    Link: ${link}
+  ## License
+  ${badge}
+  Link: ${link}
     `
   }
 }

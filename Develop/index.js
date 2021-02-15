@@ -116,5 +116,5 @@ init().then(
         })
     .catch(errorResponse => {
         // this will run when we use `reject()` - for testing
-        console.log(errorResponse);
+        //
         });
