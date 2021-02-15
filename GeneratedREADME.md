@@ -1,5 +1,5 @@
 
-  # T
+  # iCamp
 
   ## Table of Contents
   * [Description](#description)
@@ -13,10 +13,13 @@
   * [Questions](#questions?)
 
   ## Description
-  T
+  Search national parks by state.
 
   ## Languages
   * JavaScript
+ * HTML
+ * CSS
+ * jQuery
 
   
   ## License
@@ -26,15 +29,18 @@
 
   
   ## Page URL
-  N/A
+  https://dragoonkite.github.io/iCamp 
+   
 
   
   ## Installation Instructions
-  N/A
+  N/A 
+   
 
   
   ## Usage Examples/ Other Instructions
-  N/A
+  Simply enter a state by using the full name or two-digit state code and click on the search button. The current weather and a 4-day forcast will be displayed. Two more buttons will appear that can be used to display directions to the park and activities to do at the park. 
+   
 
   
   ## Contributing
@@ -46,6 +52,8 @@
 
   
   ## Questions?
-  N/A
+  github.com/DragoonKite
+  dragoonkite@gmail.com 
+   
 
   
