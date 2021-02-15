@@ -1,3 +1,6 @@
+let toc =["* [Description](#description)", "* [Languages](#languages)", "* [License](#license)"]
+
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
@@ -13,11 +16,9 @@ function renderLicenseBadge(license) {
   }
 }
 
-
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  console.log(license[0])
   let mitLicense = 'https://choosealicense.com/licenses/mit/';
   let gnuLicense = 'https://choosealicense.com/licenses/gpl-3.0/';
   if(license[0] === 'mit'){
@@ -76,11 +77,44 @@ const generateUsage = use => {
    `;
 };
 
+const generateQuestions = (git,email) => {
+  if(!git && !email){
+    return '';
+  }
+   return `
+  ## Questions?
+  github.com/${git}
+  ${email} 
+   `;
+};
+
+const generateContribute = (contri) => {
+  if(!contri){
+    return '';
+  }
+   return `
+  ## Contributing
+  ${contri}
+   `;
+};
+
+const generateTest = (test) => {
+  if(!test){
+    return '';
+  }
+   return `
+  ## Test Instructions
+  ${test}
+   `;
+};
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  console.log(data)
   return `
   # ${data.title}
+
+  ## Table of Contents
+  ${toc.join('\n ')}
 
   ## Description
   ${data.desc}
@@ -88,13 +122,19 @@ function generateMarkdown(data) {
   ## Languages
   * ${data.languages.join('\n * ')}
 
+  ${renderLicenseSection(data.license)}
+
   ${generateUrl(data.link)}
 
   ${generateInstal(data.instal)}
 
   ${generateUsage(data.usage)}
 
-  ${renderLicenseSection(data.license)}
+  ${generateContribute(data.contri)}
+
+  ${generateTest(data.test)}
+
+  ${generateQuestions(data.git, data.email)}
 `;
 }
 

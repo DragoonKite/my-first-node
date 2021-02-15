@@ -77,6 +77,26 @@ const questions = [
         type: 'input',
         name: 'usage',
         message: 'Please enter instructions for using your project and/or examples of usage (Optional)'
+    },
+    {
+        type: 'input',
+        name: 'contri',
+        message: 'Please enter guidlines for contributing to your project. (Optional)'
+    },
+    {
+        type: 'input',
+        name: 'test',
+        message: 'Please enter instructions for testing your project. (Optional)'
+    },
+    {
+        type: 'input',
+        name: 'git',
+        message: 'Please enter your github username. (Optional)'
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Please enter your email address. (Optional)'
     }];
 
 // TODO: Create a function to write README file
