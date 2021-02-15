@@ -5,11 +5,11 @@
   * [Description](#description)
   * [Languages](#languages)
   * [License](#license)
-  * [Page URL](#page url)
-  * [Installation(#installation instructions)
-  * [Usage](#usage examples/ other instructions)
+  * [Page URL](#pageurl)
+  * [Installation(#installationinstructions)
+  * [Usage](#usage examples/otherinstructions)
   * [Contributing](#contributing)
-  * [Testing](#test instructions)
+  * [Testing](#testinstructions)
   * [Questions](#questions?)
 
   ## Description
