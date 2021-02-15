@@ -49,6 +49,21 @@ const questions = [
         }
     },
     {
+        type: 'checkbox',
+        name: 'license',
+        message: 'Select license used from below or select None (Required)',
+        choices: ['mit', 'gnu', 'None'],
+        validate: licenseInput => {
+            if(licenseInput != ""){
+                return true;
+            }
+            else{
+                console.log('Please select license used to build your project, if applicable.')
+                return false;
+            }
+        }
+    },
+    {
         type: 'input',
         name: 'link',
         message: 'Enter the link to your deployed project. (Optional)'
