@@ -31,7 +31,7 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if (license !== 'None'){
+  if (license[0] !== 'None'){
     badge = renderLicenseBadge(license)
     link = renderLicenseLink(license)
 
@@ -40,6 +40,9 @@ function renderLicenseSection(license) {
   ${badge}
   Link: ${link}
     `
+  }
+  else{
+    return ""
   }
 }
 

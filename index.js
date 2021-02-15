@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs')
-const generateMarkdown = require('./utils/generateMarkdown.js');
+const generateMarkdown = require('./Develop/utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -109,7 +109,7 @@ init().then(
     answers => {return generateMarkdown(answers)})
     .then(
         //send the returned markdown page to the write file function
-        data => {writeToFile('./README.md', data)})
+        data => {writeToFile('./GeneratedREADME.md', data)})
     .then(successfulResponse => {
         // this will run when we use `resolve()` - for testing
         console.log(successfulResponse);
