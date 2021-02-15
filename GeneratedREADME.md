@@ -13,7 +13,7 @@
   * [Questions](#questions?)
 
   ## Description
-  Search national parks by state.
+  Search for national park info by state.
 
   ## Languages
   * JavaScript
@@ -39,7 +39,7 @@
 
   
   ## Usage Examples/ Other Instructions
-  Simply enter a state by using the full name or two-digit state code and click on the search button. The current weather and a 4-day forcast will be displayed. Two more buttons will appear that can be used to display directions to the park and activities to do at the park. 
+  Search a state by entering the full name or two-letter state code. From there the current weather and a 4-day forecast is displayed. Two new buttons will display directions to the park and activities to do. 
    
 
   
